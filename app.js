@@ -51,6 +51,12 @@ app.use("/order", OrderController);
 const PaymentController = require("./controllers/PaymentController");
 app.use("/payment", PaymentController);
 
+const AddProductController = require("./controllers/AddProductController");
+app.use("/new", AddProductController);
+
+const DeleteProductController = require("./controllers/DeleteProductController");
+app.use("/delete", DeleteProductController);
+
 const ReportController = require("./controllers/ReportController");
 app.use("/report", ReportController);
 
